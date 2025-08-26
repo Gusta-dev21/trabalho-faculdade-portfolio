@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Gusta</title>
+</head>
+<body>  
+   <!-- definindo cabeçalho -->
+ 
+    <header class="header" id="head" >
+      <div>
+         <h1 class="logo">
+         <a href="/">Gusta</a>
+       </h1>
+       <nav aria-label="primaria">
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+       </nav>
+      </div>
+
+
+    </header>
+    <!-- conteudo principal dividas em sessões -->
+    <main class="main">
+        <!-- article - para criar as regras de layout sobre mim,seria um conteudo independente-->
+       <article class="sobre-mim" id="sobre">
+         <img src="/img/imagem.jpg" alt="imagem-gustavo">
+         
+     
+        <div class="sobre-item">
+           <h2 ><span>Sobre</span><br>mim</h2>
+           <!-- envolvi algumas partes do paragrafo em strong e em para da uma de  na tipografia -->
+            <p>Meu nome é <strong>Gustavo</strong>,tenho atualmente 22 anos. Sou uma pessoa muito legal,gentil e divertido,sou inteligente,tento fazer o maximo do possivel para alcançar meus objetivos. os <em>Gosto bastante de musica,sou musico intermediario a 6 anos, sou guitarrista,toco teclado e Violão também e gosto bastante de séries,filmes de suspense e investigação policial.</em> </p>
+           
+           
+        </div>
+        
+       
+       </article>
+        <!-- Formação -->
+      
+       <section id="formacao" class="formacao">
+         <h2 >For<br>ma<br>ção</h2>
+         
+            <div class="formacao-items">
+                  <img src="img/icons8-html-5.svg" alt="">
+                <div>
+                  
+                    <h3>HTML 5</h3>
+                    <p>Tenho conhecimento solido em HTML 5. Sem bastante coisa sobre estruturação de paginas e tags.</p>
+                </div>
+                  <img src="img/icons8-css3.svg" alt="">
+                <div>
+
+                  
+                    <h3>CSS 3</h3>
+                    <p>Tenho conhecimento intermediario em CSS 3. Tenho boas praticas com estilização,tipografia e posicionamento.</p>
+                </div>
+                   <img src="img/icons8-js.svg" alt="">
+                 <div>
+                   
+                    <h3>JavaScript</h3>
+                    <p>Tenho conhecimento basico em JavaScript e ES6. Conceitos como variaveis tipos de dados,orientação ao objeto,consumo de API's e assincronismo,funções e NodeJS.</p>
+
+                </div>
+                 <img src="img/language-translate-speech-bubbles-icon.svg" alt="">
+                <div>
+                    
+                    <h3>Idiomas</h3>
+                    <p>Tenho conhecimento intermediario de ingles,Sou nivel B1,consigo entender um pouco dos falantes nativos e conversação basica com o vocabulario mais dia a dia. </p>
+                    
+                </div>
+                <img src="img/icons8-logo-java-coffee-cup.svg" alt="">
+                 <div>
+                    
+                    <h3>Java</h3>
+                    <p>Tenho uma boa logica em Java,que seria a minha linguagem mais dominante pois quero ser dev back end com spring. </p>
+                    
+                </div>
+                
+            </div>
+           
+       </section>
+      <!-- Estrutura de portifolio -->
+       <section class="portfolio" id="portfolio" >
+        <h2 >Portfólio</h2>
+       <div class="projetos">
+
+          
+     
+         <div class="port-item">
+          <a href="https://gusta-dev21.github.io/Tecnoblog">
+          <img src="img/tecnoblog.png" alt="link-tecnoblog">
+            
+          </a>
+        </div>
+       
+        <div class="port-item">
+          <a href="https://gusta-dev21.github.io/projeto-bikcraft-Curso-origamid">
+            <img src="img/bikcraft.png" alt="imagem-tecnoblog">
+           
+          </a>
+        </div>
+       </div>
+       <!-- Estruturação da sessão de contatos -->
+
+       </section>
+       <section class="contato" id="contato" >
+           <h2 >Contato
+          </h2>
+          <!-- a mensagem do formulario vai até o email que eu implementei -->
+            <form class="form" action="mailto:gustavoazeribeiro21@gmail.com" method="post" enctype="text/plain">
+              <div class="form-item">
+                  <label for="nome"><h3>Nome</h3></label>
+                  <input type="text" id="nome" placeholder="Digite seu nome" >
+
+              </div>
+                <div class="form-item">
+                  <label for="email"><h3>Email</h3></label>
+                  <input type="email" id="email" placeholder="Digite seu email" >
+                  
+              </div>
+              <!-- não declarei name,se não esse dorc aparece no campo de gmail,outlook e etc -->
+               <div class="form-item">
+                  <label for="msg"><h3>Mensagem</h3></label>
+                  <textarea name="msg" id="msg"></textarea>
+                  <button type="submit">Enviar</button>
+                  
+              </div>
+              
+            </form>
+        </section>
+       </main>
+ 
+ 
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

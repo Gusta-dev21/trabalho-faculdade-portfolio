@@ -1,0 +1,62 @@
+/* 
+    Aqui são os codigo referentes as regras de responsividade
+    para meu codigo principal não ficar verboso.
+
+*/
+
+/* telas menores que 900px */
+
+@media (max-width:900px) {
+    .header div {
+        gap:10px;
+
+    }
+    .main img{
+        max-width: 80%;
+        justify-self: center;   
+    }
+    .sobre-mim,.formacao,.contato{
+        grid-template-columns: 1fr;
+      
+    }
+    .sobre-mim p{
+            text-align: center  ;
+    }.sobre-mim h2{
+        font-size: 80px;
+
+    }
+    .formacao h2{
+        text-align: start;
+    }        
+   .contato h2,.portfolio h2{
+        text-align: center;
+        font-size: 40px;
+
+    }.projetos{
+        justify-content: center;
+    }
+
+}
+
+/* telas menores que 600px */
+
+@media (max-width:600px) {
+    .header div {
+        gap:10px;
+       
+
+    }
+    .menu{
+     
+      justify-content: center;
+    }
+   
+    .sobre-mim,.formacao{
+        grid-template-columns: 1fr;
+      
+    }
+
+}
+
+
+

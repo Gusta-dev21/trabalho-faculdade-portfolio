@@ -1,0 +1,284 @@
+
+
+
+/* resetando os estilos */
+*{
+    padding:0;
+    margin:0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    
+
+
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+/* apliquei fontes sem serifa em todos os links e pagrafos e labels, e mantive os titulos mais padrão serifado */
+a,p,label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    display: inline-block;
+}
+
+
+body{
+     background: #d5d2d2;
+}
+
+/* Estilizando o header */
+
+
+/* header tem uma implentação de fixar ao scrollar a pagina */
+.header{
+    position: sticky;
+    top: 0;
+    background: #000;
+
+}
+.header div{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+
+
+
+    gap:30px;
+    padding:20px 0px;
+    
+}
+.header a {
+    
+    color:#fff;
+   
+
+}
+.header 
+/* estilizando menu do header */
+.menu  {
+    
+    display: flex;
+    flex-wrap:wrap ;
+    gap:20px;
+}
+
+.menu a {
+    border-radius: 4px;
+    padding:15px 10px;
+    transition:0.5s ;
+}
+.menu a:hover{
+    background:#191919;
+}
+
+/* estilizando a main */
+.main{
+
+   
+    margin: 0 auto;
+}
+.main img{
+    border-radius: 4px;
+}
+
+.sobre-mim{
+    padding:20px 10px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    gap:30px;
+
+    align-items:  center ;
+}
+.sobre-item{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.sobre-item h2{
+    color: #B8860B;
+    font-weight: bold;
+
+    border-left: 10px solid #B8860B;
+   
+    font-size: 100px;
+    text-transform: uppercase;
+    padding-left: 10px;
+   
+}
+.sobre-mim h2 span{
+    color:#212121;
+  
+}
+.sobre-item p {
+    font-size: 20px;
+    line-height: 1.8;
+   
+}
+/* Estilos da sessão formação */
+.formacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center ;
+   
+
+    background: #100f0f;
+    padding:20px 10px;
+}
+
+/* estilizando titulo principal de formação */
+.formacao h2{
+    color: #fff;
+    font-size: 100px;
+
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+
+   
+    
+}
+/* Aqui são o posicionamento dos paragrafos,titulos e icones */
+.formacao-items{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap:10px;
+    align-items: center;
+
+    padding:20px 0;
+}
+.formacao h3{
+    padding:10px 0px;
+    color: #fff;
+}
+
+.formacao-items img {  
+    border-left: 4px solid #B8860B;
+    padding-left: 5px;
+    margin-top: 20px;   
+    
+    
+}
+.formacao-items p,h3 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+/* estilizando a sessão de portfólio */
+.portfolio{
+  
+  
+}
+.portfolio h2{
+    
+    font-size: 5.5rem;
+    color: rgba(0,0,0,0.4);
+
+    text-transform: uppercase;
+    text-align: center;
+    padding:20px 0;
+
+   
+}
+.portfolio h3{
+    color: #000;
+    
+}
+
+.projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: #d5d2d2;
+
+  
+    gap:50px;
+   
+    padding:30px 0px;
+
+  
+
+}
+.port-item {
+   
+    max-width: 700px;  
+}
+
+/* Esitilização de contatos */
+.contato{
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   padding:40px 10px;
+
+   background: #100f0f;
+  
+}
+.contato h2{
+
+        font-size: 100px ;
+        text-align: center;
+        text-transform:uppercase ;
+
+        color: #fff;
+}
+.contato form{
+    padding:30px 0;
+   
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+    padding:20px ;
+
+        border-radius: 20px;
+    border-left:5px solid #B8860B;
+}
+.form-item label{
+    color:#fff;     
+}
+.form-item input{
+    border: none;
+    border-radius: 4px;
+    background:#f7f7f7;
+    padding:10px;
+}
+.form-item #msg{
+    border-radius: 4px;
+    min-height: 300px;
+   
+     padding:10px
+
+}
+.form-item button {
+    align-self: start;
+    border: none;
+    padding:10px 20px;
+    margin-top:10px;
+    
+    border-radius: 4px;
+    background: #eab93d;
+    color: #100f0f;
+
+
+
+
+}
+.form-item button:hover{
+     background: #c5992c;
+}
+
