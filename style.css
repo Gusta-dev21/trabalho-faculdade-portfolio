@@ -1,5 +1,7 @@
 
-
+html{
+   scroll-behavior: smooth;
+}
 
 /* resetando os estilos */
 *{
@@ -87,6 +89,7 @@ body{
     margin: 0 auto;
 }
 .main img{
+
     border-radius: 4px;
 }
 
@@ -118,6 +121,11 @@ body{
 .sobre-mim h2 span{
     color:#212121;
   
+}
+.sobre-mim img{
+    max-width: 300px;
+  
+   justify-self: center;
 }
 .sobre-item p {
     font-size: 20px;
@@ -228,13 +236,14 @@ body{
 }
 .contato h2{
 
-        font-size: 100px ;
+        font-size: 70px ;
         text-align: center;
         text-transform:uppercase ;
 
         color: #fff;
 }
 .contato form{
+    max-width: 500px;
     padding:30px 0;
    
 }
